@@ -1,0 +1,67 @@
+/*
+    Filename: style.css
+    Author: Brian Twene
+    Date: 13/07/21
+*/
+
+/*set padding, margin, font and 
+box-sizing to all elements*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*allow html adn body to take up 
+full viewport height and width*/
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Grid container settings for the 
+mobile version of the site*/
+#grid-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer about";
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+}
+/*inner grid container for the mobile version*/
+main{
+    grid-area: main;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "."
+    "control";
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    
+}
+#color-control{
+    grid-area: control;
+}
+#about{
+    grid-area: about;
+    background-color: black;
+}
+
+#about-background{
+    display: none;
+}
