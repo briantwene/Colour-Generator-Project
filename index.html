@@ -1,0 +1,84 @@
+<!--
+    Filename: colour-generator.html
+    Author: Brian Twene
+    Date: 12/07/2021
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--general setup-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport meta tag for responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawsome icon import-->
+    <script src="https://kit.fontawesome.com/1720b4c471.js" crossorigin="anonymous"></script>
+    <title>Colour-Generator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+    </style>
+</head>
+
+<body>
+    <!--container for using CSS Grid-->
+    <div id="grid-container">
+        <!--header area-->
+        <header>Colour-Generator</header>
+        <!--Content area-->
+        <main class="color-display">
+            <!--color-->
+            <div id="color-control">
+                <!--here form input fields used to show colour codes-->
+                <label for="HEX">HEX</label><br>
+                <input type="text" class="color-field" id="HEX" value="#000000" readonly>
+                <br>
+                <label for="RGB">RGB</label><br>
+                <input type="text" class="color-field" id="RGB" value="(255,255,255)"readonly>
+                <br>
+                <!--Generate button-->
+                <button id="generate">GENERATE</button>
+            </div>
+        </main>
+
+        <!--info button-->
+        <div id="about">
+            <button id="about-button">
+                <i class="fas fa-question-circle"></i>
+            </button>
+        </div>
+
+        <!--footer of the page-->
+        <footer>
+            <div id="name">Brian Twene</div>
+            <div id="links"></div>
+        </footer>
+    </div>
+    <!--container for the "About" Modal-->
+    <div id="about-background">
+
+        <!--the about modal-->
+        <div id="about-info">
+            <h2 class="about-heading">About</h2>
+            
+            <p>This is a simple random color generator that gives the values of each color in hexadecimal and RGB.</p>
+            <br>
+
+            <h2 class="about-heading">How to use?</h2>
+
+            <p>All you have to do is click on the “GENERATE” button and a color will be made.</p>
+
+            <p>If you like the color you can then copy the Hex or RGB code to use.</p>
+            <!--button to close the modal-->
+            <div id="about-close">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
