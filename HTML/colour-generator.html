@@ -17,7 +17,7 @@
     <title>Colour-Generator</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
     </style>
 </head>
 
@@ -25,26 +25,26 @@
     <!--container for using CSS Grid-->
     <div id="grid-container">
         <!--header area-->
-        <header><h1>Colour-Generator</h1></header>
+        <header>Colour-Generator</header>
         <!--Content area-->
         <main class="color-display">
             <!--color-->
             <div id="color-control">
                 <!--here form input fields used to show colour codes-->
                 <label for="HEX">HEX</label><br>
-                <input type="text" class="color-field" id="HEX" readonly>
+                <input type="text" class="color-field" id="HEX" value="#000000" readonly>
                 <br>
                 <label for="RGB">RGB</label><br>
-                <input type="text" class="color-field" id="RGB" readonly>
+                <input type="text" class="color-field" id="RGB" value="(255,255,255)"readonly>
                 <br>
                 <!--Generate button-->
-                <button>GENERATE</button>
+                <button id="generate">GENERATE</button>
             </div>
         </main>
 
         <!--info button-->
         <div id="about">
-            <button>
+            <button id="about-button">
                 <i class="fas fa-question-circle"></i>
             </button>
         </div>
@@ -60,22 +60,22 @@
 
         <!--the about modal-->
         <div id="about-info">
-            <h1>About</h1>
+            <h2 class="about-heading">About</h2>
             
-            <p>This is a simple random color generator that gives the values of each color in hexadecimal and RGB</p>
+            <p>This is a simple random color generator that gives the values of each color in hexadecimal and RGB.</p>
             <br>
 
-            <h1>How to use?</h1>
+            <h2 class="about-heading">How to use?</h2>
 
             <p>All you have to do is click on the “GENERATE” button and a color will be made.</p>
 
             <p>If you like the color you can then copy the Hex or RGB code to use.</p>
             <!--button to close the modal-->
-            <span>
-                <button>
+            <div id="about-close">
+                <button id="close">
                     <i class="fas fa-times"></i>
                 </button>
-            </span>
+            </div>
         </div>
 
     </div>
