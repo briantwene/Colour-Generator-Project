@@ -15,6 +15,23 @@ box-sizing to all elements*/
     font-family: 'Poppins', sans-serif;
 }
 
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+    cursor: pointer;
+ }
+
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
 /*allow html adn body to take up 
 full viewport height and width*/
 html,body{
@@ -52,7 +69,6 @@ header{
 
 /*inner grid container for the mobile version*/
 main{
-    background-color: #1EE4F0;
     grid-area: main;
     display: grid;
     grid-auto-columns: auto;
@@ -131,10 +147,16 @@ footer, #about{
     background-color: black;
 }
 /*about modal container*/
-#about-background{
+.about-background{
     background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     height: 100%;
     display: none;
+    animation: fade 200ms;
 }
 
 /*inner container of the modal*/
@@ -177,6 +199,14 @@ width: 20%;
     display: none;
 }
 
+.open{
+    display: grid;
+}
+
+.close{
+    display: none;
+}
+
 @media only screen and (min-width: 768px){
    
     #grid-container{
@@ -186,6 +216,7 @@ width: 20%;
         grid-template-areas: 
         "main main main"
         "footer footer header";
+        
     }
    
 
@@ -245,10 +276,7 @@ width: 20%;
     }
 
    
-    a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
-       cursor: pointer;
-    }
-
+    
 
 
     #about-mobile,#about-button-mobile{
@@ -259,9 +287,10 @@ width: 20%;
         display: block;
     }
     
-    #about-background{
-        min-height: 100%;
-      
+    .about-background{
+          
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
         grid-template-rows: auto auto min-content min-content auto auto; 
     }
@@ -272,6 +301,14 @@ width: 20%;
         padding: 2em;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
         border-radius: 55px;
+    }
+
+    .open{
+        display: grid;
+    }
+
+    .close{
+        display: none;
     }
 
 
