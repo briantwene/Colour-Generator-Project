@@ -23,8 +23,8 @@ I thought that this project would be great practice for my JavaScript skills in 
 ## How to use?
 Simply click the "GENERATE" button and a random color will be generated the background (or panel on mobile). Colour information will be displayed in the RGB and HEX fields.
 
-If you like the colour you can use `Ctrl+C `(`⌘ + C` on Mac) or right click and copy
-
+If you like the colour you can use `Ctrl+C` (`⌘ + C` on Mac) or right click and copy
+ 
 ## Future Plans
 I plan on improving on this project in the future. 
 
@@ -36,4 +36,4 @@ I plan on improving on this project in the future.
 
 
 ## Credits
-This project was inspirered by this site: http://www.shodor.org/~ishaanr/PHP/colorgenerator.php?
+This project was inspired by this [site](http://www.shodor.org/~ishaanr/PHP/colorgenerator.php?)
