@@ -1,6 +1,8 @@
 # Colour-Generator-Project
 This project is a simple webpage that allows the user to generate a random colour by clicking a button.
 
+![color generator site](img/generator-main.png)
+
 ## Motivation
 I thought that this project would be great practice for my JavaScript skills in using DOM manipulation and using different layouts in CSS like grid and flexbox.
 
