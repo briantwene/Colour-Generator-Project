@@ -31,7 +31,7 @@ Simply click the "GENERATE" button and a random color will be generated the back
 If you like the colour you can use `Ctrl+C` (`⌘ + C` on Mac) or right click and copy
  
 ## Future Plans
-I plan on improving on this project in the future. 
+I plan on improving this project in the future. 
 
 **Some things I would like to do are:**
 - Adding a copy to clipboard button
