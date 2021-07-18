@@ -23,7 +23,8 @@ I thought that this project would be great practice for my JavaScript skills in 
 
 
 ## How to use?
-![color generator in use](https://media.giphy.com/media/B4H361AVFYAbknQcWA/giphy.gif)
+
+<img src="https://media.giphy.com/media/B4H361AVFYAbknQcWA/giphy.gif" alt="color generator in use" align="center"/>
 
 Simply click the "GENERATE" button and a random color will be generated the background (or panel on mobile). Colour information will be displayed in the RGB and HEX fields.
 
