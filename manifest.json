@@ -2,6 +2,7 @@
   "name": "Color Generator",
   "short_name": "ColorGen",
   "start_url": "index.html",
+  "scope": "https://bt521.github.io/Colour-Generator-Project/",
   "display": "standalone",
   "background_color": "#fdfdfd",
   "theme_color": "#2196f3",
