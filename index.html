@@ -6,86 +6,117 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- PWA stuffs -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
     <!--general setup-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--viewport meta tag for responsiveness-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--fontawsome icon import-->
-    <script src="https://kit.fontawesome.com/1720b4c471.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1720b4c471.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Colour-Generator</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--container for using CSS Grid-->
     <div id="grid-container">
-        <!--header area-->
-        <header>Color-Generator</header>
-        <!--Content area-->
-        <main class="color-display">
-            <!--color-->
-            <div id="color-control">
-                <!--here form input fields used to show colour codes-->
-                <label for="HEX">HEX</label><br>
-                <input type="text" class="color-field" id="HEX" value="#000000" readonly>
-                <br>
-                <label for="RGB">RGB</label><br>
-                <input type="text" class="color-field" id="RGB" value="(255,255,255)"readonly>
-                <br>
-                <!--Generate button-->
-                <button id="generate" onclick="main()">GENERATE</button>
-            </div>
-
-            
-            <button id="about-button-desktop">
-                <i class="fas fa-question-circle"></i>
-            </button>
-        
-        </main>
-
-        <!--info button-->
-        <div id="about-mobile">
-            <button id="about-button-mobile">
-                <i class="fas fa-question-circle"></i>
-            </button>
+      <!--header area-->
+      <header>Color-Generator</header>
+      <!--Content area-->
+      <main class="color-display">
+        <!--color-->
+        <div id="color-control">
+          <!--here form input fields used to show colour codes-->
+          <label for="HEX">HEX</label><br />
+          <input
+            type="text"
+            class="color-field"
+            id="HEX"
+            value="#000000"
+            readonly
+          />
+          <br />
+          <label for="RGB">RGB</label><br />
+          <input
+            type="text"
+            class="color-field"
+            id="RGB"
+            value="(255,255,255)"
+            readonly
+          />
+          <br />
+          <!--Generate button-->
+          <button id="generate" onclick="main()">GENERATE</button>
         </div>
 
-        <!--footer of the page-->
-        <footer>
-            <div id="name">Brian Twene</div>
-            <div id="links"></div>
-        </footer>
+        <button id="about-button-desktop">
+          <i class="fas fa-question-circle"></i>
+        </button>
+      </main>
+
+      <!--info button-->
+      <div id="about-mobile">
+        <button id="about-button-mobile">
+          <i class="fas fa-question-circle"></i>
+        </button>
+      </div>
+
+      <!--footer of the page-->
+      <footer>
+        <div id="name">Brian Twene</div>
+        <div id="links"></div>
+      </footer>
     </div>
     <!--container for the "About" Modal-->
     <div class="about-background">
+      <!--the about modal-->
+      <div id="about-info">
+        <h2 class="about-heading">About</h2>
 
-        <!--the about modal-->
-        <div id="about-info">
-            <h2 class="about-heading">About</h2>
-            
-            <p>This is a simple random color generator that gives the values of each color in hexadecimal and RGB.</p>
-            <br>
+        <p>
+          This is a simple random color generator that gives the values of each
+          color in hexadecimal and RGB.
+        </p>
+        <br />
 
-            <h2 class="about-heading">How to use?</h2>
+        <h2 class="about-heading">How to use?</h2>
 
-            <p>All you have to do is click on the “GENERATE” button and a color will be made.</p>
+        <p>
+          All you have to do is click on the “GENERATE” button and a color will
+          be made.
+        </p>
 
-            <p>If you like the color you can then copy the Hex or RGB code to use.</p>
-            <!--button to close the modal-->
-            <div id="about-close">
-                <button id="close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
+        <p>
+          If you like the color you can then copy the Hex or RGB code to use.
+        </p>
+        <!--button to close the modal-->
+        <div id="about-close">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-
+      </div>
     </div>
-    
-</body>
-<script src="JavaScript/app.js"></script>
+  </body>
+  <script src="JavaScript/app.js"></script>
 </html>
